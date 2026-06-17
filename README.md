@@ -5,7 +5,7 @@ A pluggable benchmarking framework for evaluating memory and context systems.
 ## MemSWE Reference Role
 
 For MemSWE harness work, this repository is **reference material only**. Use it to study
-portable patterns, not as a dependency, upstream source of truth, or schema authority.
+portable patterns, not as a dependency, canonical MemSWE runtime/spec, upstream source of truth, or schema authority.
 
 Useful patterns to adapt conceptually:
 - **Provider abstraction:** narrow provider interface, provider-specific prompts, and per-provider concurrency knobs.
