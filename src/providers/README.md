@@ -2,6 +2,16 @@
 
 Memory provider integrations. Each provider implements the `Provider` interface.
 
+## MemSWE Reference Notes
+
+For MemSWE, use this provider layer as a conceptual adapter boundary: initialize a backend,
+ingest or prepare inputs, wait for any indexing step, search with scoped options, then clear
+test data. The pattern can inform filesystem/RAG baselines and hosted-provider comparisons,
+but it is not a required dependency and should not define MemSWE run records or scoring.
+
+Avoid carrying over QA/judge-first assumptions from MemoryBench providers. MemSWE deterministic
+scoring should keep provider retrieval/output capture separate from verifier rules.
+
 ## Interface
 
 ```typescript
@@ -55,3 +65,5 @@ Example: See `src/providers/zep/prompts.ts`
 | `supermemory` | `supermemory` | Raw JSON sessions |
 | `mem0` | `mem0ai` | v2 API with graph |
 | `zep` | `@getzep/zep-cloud` | Graph-based, custom prompts |
+| `filesystem` | local files + OpenAI extraction | MEMORY.md-style baseline; pattern only for MemSWE |
+| `rag` | local RAG utilities | Local retrieval baseline; pattern only for MemSWE |

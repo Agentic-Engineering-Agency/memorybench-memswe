@@ -2,6 +2,26 @@
 
 A pluggable benchmarking framework for evaluating memory and context systems.
 
+## MemSWE Reference Role
+
+For MemSWE harness work, this repository is **reference material only**. Use it to study
+portable patterns, not as a dependency, upstream source of truth, or schema authority.
+
+Useful patterns to adapt conceptually:
+- **Provider abstraction:** narrow provider interface, provider-specific prompts, and per-provider concurrency knobs.
+- **Checkpointed pipeline:** phase-level resume across ingest → index → search → answer → evaluate → report.
+- **Baselines:** filesystem `MEMORY.md`-style extraction and local RAG provider shapes as comparison baselines.
+- **Normalized reports:** one `report.json` shape with summary, latency, token, retrieval, and per-question-type sections.
+
+Do **not** copy these as canonical MemSWE definitions:
+- task schema or task IDs
+- verifier/scoring rules
+- condition definitions
+- run-record schema
+
+No direct dependency on this repo should be introduced for MemSWE unless Eduardo explicitly approves it.
+MemSWE deterministic scoring should not inherit MemoryBench's QA/judge-first assumptions by default.
+
 <img width="3584" height="2154" alt="original" src="https://github.com/user-attachments/assets/7fe49b7e-ed0b-4861-92a5-fa5d199cfc72" />
 
 

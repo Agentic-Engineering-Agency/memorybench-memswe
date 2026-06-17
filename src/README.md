@@ -1,5 +1,19 @@
 # Source Structure
 
+## MemSWE Reference Map
+
+Treat `src/` as implementation examples for future MemSWE harness work, not as canonical
+MemSWE architecture. The most reusable ideas are the small adapter interfaces, phase
+orchestration, durable checkpoint files, and normalized report generation. Keep any MemSWE
+implementation independently owned unless Eduardo explicitly approves a direct dependency.
+
+Reference areas:
+- `providers/`: adapter boundary for memory/search backends; useful for comparing filesystem, RAG, and hosted providers.
+- `orchestrator/`: resumable phase pipeline and per-question checkpoint state.
+- `orchestrator/phases/report.ts`: normalized report aggregation across accuracy, latency, tokens, retrieval, and question type.
+- `benchmarks/`: dataset adapter pattern only; not a MemSWE task-schema source of truth.
+- `judges/`: LLM-as-judge plumbing only; MemSWE deterministic verifiers should avoid judge-first assumptions.
+
 ```
 src/
 ├── benchmarks/      # Benchmark adapters (LoCoMo, LongMemEval, ConvoMem)

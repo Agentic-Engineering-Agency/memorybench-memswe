@@ -2,6 +2,14 @@
 
 LLM-as-judge implementations. Each judge implements the `Judge` interface.
 
+## MemSWE Reference Notes
+
+This package's judge layer is useful for seeing how model-backed evaluators are isolated
+behind an interface and how reports carry explanations. Do not treat it as the default
+MemSWE scoring model. MemSWE deterministic scoring should prefer explicit verifier rules
+and stable condition definitions; use LLM judges only if the MemSWE spec explicitly calls
+for them.
+
 ## Interface
 
 ```typescript
