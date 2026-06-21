@@ -1,5 +1,10 @@
 # MemoryBench Framework
 
+> **MemSWE/PAP note:** This framework diagram is reference-only for MemSWE work.
+> Use it to study provider boundaries, checkpointing, phase orchestration, and report aggregation patterns.
+> Do not treat it as canonical MemSWE architecture, task schema, condition taxonomy, verifier/scoring model, or run-record schema.
+> Do not introduce a direct `pi-memswe` dependency on this repo unless Eduardo explicitly approves.
+
 ## Architecture Flow
 
 ```

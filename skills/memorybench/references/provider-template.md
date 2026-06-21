@@ -1,5 +1,10 @@
 # Provider Template Reference
 
+> **MemSWE/PAP note:** Reference-only for MemSWE work.
+> These MemoryBench interfaces, formats, commands, and troubleshooting steps are examples/patterns, not canonical `pi-memswe` runtime contracts.
+> Do not copy them as MemSWE task schema, condition definitions, verifier inputs, scoring rules, or run-record schema.
+> Provider templates may inform adapter boundaries only; avoid direct dependency or generated-code coupling unless Eduardo explicitly approves.
+
 This document contains the code templates used to generate provider adapters for MemoryBench.
 
 ## Provider Interface

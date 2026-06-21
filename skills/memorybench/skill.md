@@ -5,6 +5,10 @@ description: "Automatically benchmark your custom memory implementation against 
 
 # MemoryBench Integration Skill
 
+> **MemSWE/PAP note:** This skill is retained as MemoryBench reference material only.
+> For `pi-memswe`, do not run it as an integration workflow, do not clone/couple MemoryBench into the harness, and do not treat its generated provider/benchmark/judge shapes as canonical.
+> Use only as conceptual reference for provider adapters, filesystem/RAG baselines, checkpointing, and normalized reports unless Eduardo explicitly approves otherwise.
+
 Automatically benchmark your custom memory implementation against established systems like Supermemory, Mem0, and Zep.
 
 ## What This Skill Does

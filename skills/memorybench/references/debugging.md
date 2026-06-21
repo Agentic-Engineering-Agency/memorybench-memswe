@@ -1,5 +1,9 @@
 # Debugging and Troubleshooting Reference
 
+> **MemSWE/PAP note:** Reference-only for MemSWE work.
+> These MemoryBench interfaces, formats, commands, and troubleshooting steps are examples/patterns, not canonical `pi-memswe` runtime contracts.
+> Do not copy them as MemSWE task schema, condition definitions, verifier inputs, scoring rules, or run-record schema.
+
 Common issues when integrating a custom provider into MemoryBench and how to resolve them.
 
 ## Quick Diagnostics
