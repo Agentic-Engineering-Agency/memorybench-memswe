@@ -1,5 +1,13 @@
 # MemoryBench Framework
 
+## MemSWE Reference Scope
+
+This framework document is reference material only for MemSWE harness work. Use the
+architecture diagrams to study portable adapter/orchestrator/reporting patterns, not as a
+canonical MemSWE runtime, task schema, verifier policy, run-record schema, or dependency.
+Current MemSWE runtime/harness work lives in the sibling `../pi-memswe` checkout; benchmark
+identity and spec-owned definitions live in `../memswe`.
+
 ## Architecture Flow
 
 ```

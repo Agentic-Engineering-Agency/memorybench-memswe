@@ -7,6 +7,14 @@ description: "Automatically benchmark your custom memory implementation against 
 
 Automatically benchmark your custom memory implementation against established systems like Supermemory, Mem0, and Zep.
 
+## MemSWE Reference Scope
+
+For MemSWE harness work, treat this skill as MemoryBench integration reference only. Do not
+run it as the MemSWE harness, clone this repository as a MemSWE dependency, or use its
+generated provider wiring as canonical MemSWE task/schema/scoring behavior. Current MemSWE
+runtime/harness work lives in the sibling `pi-memswe` checkout; benchmark-owned task
+descriptors, fixtures, verifier policy, and run-record schema live in sibling `memswe`.
+
 ## What This Skill Does
 
 When you invoke this skill from your project, it handles the complete benchmarking process end-to-end:
