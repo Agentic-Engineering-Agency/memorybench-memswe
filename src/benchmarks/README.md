@@ -7,7 +7,7 @@ Benchmark dataset adapters. Each benchmark implements the `Benchmark` interface.
 This adapter shape is useful reference for loading tasks, exposing filtered questions, and
 mapping each question to haystack/context sessions. It is **not** canonical for MemSWE task
 schema, task IDs, condition definitions, verifier inputs, or run-record schema. Keep those
-definitions in the MemSWE benchmark/spec source of truth (`../memswe`); `../pi-memswe` is the current runtime/harness.
+definitions in sibling `memswe`; sibling `pi-memswe` is the current runtime/harness.
 
 ## Interface
 
