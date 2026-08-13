@@ -57,6 +57,16 @@ This file adds only what is specific to this repo. Where they conflict, this fil
 - Keep run artifacts and credentials out of source control, and never use paid comparison runs as a routine smoke test.
 - Distinguish judge-based accuracy from deterministic verification in all claims and reports.
 
+## Command Code (alternate harness)
+
+Command Code is an **alternate** executor available in this repo, admitted for a named
+capability gap (taste learning, checkpoints/rewind, plan-mode review, headless `cmd -p` runs,
+native MCP with per-server permission gating). It reads this `AGENTS.md` as its memory file, so
+this file remains the single instruction source. It is **not** the default — OMP is. The
+generated `.commandcode/settings.json` mirrors the OMP discipline in Command Code's permission
+rules and is materialized from `scripts/harness-matrix.json`; never hand-edit it. See
+`docs/standards/harness.md` (Command Code section) and `docs/research/command-code-evaluation.md`.
+
 ## Deviations
 
 - None.
