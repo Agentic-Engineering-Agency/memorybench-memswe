@@ -2,6 +2,9 @@
 
 A pluggable benchmarking framework for evaluating memory and context systems.
 
+See [the portfolio integration contract](docs/portfolio-integration.md) for this repository's
+reference-only role, native evidence ownership, and the fields that are not currently captured.
+
 ## MemSWE Reference Role
 
 For MemSWE harness work, this repository is **reference material only**. Use it to study
