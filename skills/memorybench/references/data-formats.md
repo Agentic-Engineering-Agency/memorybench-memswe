@@ -1,5 +1,9 @@
 # Data Formats Reference
 
+> **MemSWE/PAP note:** Reference-only for MemSWE work.
+> These MemoryBench interfaces, formats, commands, and troubleshooting steps are examples/patterns, not canonical `pi-memswe` runtime contracts.
+> Do not copy them as MemSWE task schema, condition definitions, verifier inputs, scoring rules, or run-record schema.
+
 This document explains the data structures used in MemoryBench and how to transform them for your memory system.
 
 ## UnifiedSession Format

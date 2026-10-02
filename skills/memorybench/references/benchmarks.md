@@ -1,5 +1,9 @@
 # Benchmark Datasets Reference
 
+> **MemSWE/PAP note:** Reference-only for MemSWE work.
+> These MemoryBench interfaces, formats, commands, and troubleshooting steps are examples/patterns, not canonical `pi-memswe` runtime contracts.
+> Do not copy them as MemSWE task schema, condition definitions, verifier inputs, scoring rules, or run-record schema.
+
 MemoryBench supports multiple benchmark datasets, each designed to test different aspects of memory systems.
 
 ## Available Benchmarks
